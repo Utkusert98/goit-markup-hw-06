@@ -1,0 +1,210 @@
+/**TABLET**/
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /**SECTION 1**/
+  .main-table {
+    padding-top: 112px;
+    padding-bottom: 204;
+    width: 100%;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-tablet.jpg);
+  }
+
+  @media screen and (min-resolution: 2x) {
+    .main-table {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-tablet.jpg);
+    }
+  }
+
+  .main-title {
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 216px;
+  }
+
+  /**SECTION 2**/
+  .features {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .features-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .features-list {
+    gap: 0 24px;
+  }
+
+  .features-item:nth-child(1),
+  .features-item:nth-child(2) {
+    margin-bottom: 72px;
+  }
+
+  /**SECTION 3**/
+  .team-cards .container {
+    width: 100%;
+    max-width: 552px;
+  }
+
+  .team-members {
+    column-gap: 24px;
+    row-gap: 72px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .team-member {
+    flex: 1 1 calc((100% - 24px) / 2);
+    max-width: calc((100% - 24px) / 2);
+  }
+
+  /**SECTION 4**/
+  .work-item {
+    flex: 1 1 calc((100% - 24px) / 2);
+    max-width: calc((100% - 24px) / 2);
+  }
+
+  .all-works {
+    justify-content: flex-start;
+  }
+}
+
+/**DESKTOP**/
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    /* padding-left: 156px;
+    padding-right: 156px; */
+  }
+
+  /**HEADER**/
+  .contacts-links {
+    display: flex;
+  }
+
+  .navigation-links {
+    display: flex;
+  }
+  /**SECTION 1**/
+  .main-title {
+    font-size: 56px;
+    line-height: 1.07;
+    width: 496px;
+  }
+
+  .main-table {
+    width: 100%;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-desktop.jpg);
+  }
+
+  @media screen and (min-resolution: 2x) {
+    .main-table {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-desktop.jpg);
+    }
+  }
+
+  /**SECTION 2**/
+  .features {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .features-item {
+    flex-basis: calc((100% - 72px) / 4);
+    flex-shrink: 0;
+  }
+
+  .features-list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: nowrap;
+  }
+
+  .icon-benefits {
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    padding: 24px 100px;
+    width: 264px;
+    height: 112px;
+    background: #f4f4fd;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /**SECTION 3**/
+  .team-cards .container {
+    max-width: 1158px;
+    margin: 0 auto;
+  }
+
+  .team-members {
+    column-gap: 24px;
+  }
+
+  .team-member {
+    flex: 1 1 calc((100% - 72px) / 4);
+    max-width: calc((100% - 72px) / 4);
+  }
+
+  /**SECTION 4**/
+  .work-item {
+    flex: 1 1 calc((100% - 24px) / 4);
+    max-width: calc((100% - 24px) / 4);
+  }
+
+  .all-works {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  /**FOOTER**/
+  footer .container.footer-section {
+    max-width: 1158px;
+    display: flex;
+    align-items: baseline;
+  }
+
+  .footer-box {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .social-media-footer {
+    padding-bottom: 0;
+  }
+
+  .logo-footer-text {
+    margin-right: 120px;
+    padding-bottom: 0;
+  }
+
+  .footer-form {
+    display: flex;
+    gap: 24px;
+  }
+}
